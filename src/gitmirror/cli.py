@@ -16,7 +16,7 @@ from .report import line, name_width, summary
 
 def _parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        prog="repotrack",
+        prog="gitmirror",
         description=(
             "Mirror the git repos listed in a YAML manifest into a local "
             "directory. The flow is one-way: local copies are overwritten to "

@@ -1,4 +1,4 @@
-# repotrack
+# gitmirror
 
 Keep a set of git repositories mirrored locally from a YAML manifest.
 
@@ -16,14 +16,14 @@ So there are only two states:
 
 ```sh
 uv sync
-uv run repotrack --help
+uv run gitmirror --help
 ```
 
 ## Usage
 
 ```sh
-repotrack repos.yml              # mirror every repo in the manifest
-repotrack repos.yml --status     # report only, change nothing
+gitmirror repos.yml              # mirror every repo in the manifest
+gitmirror repos.yml --status     # report only, change nothing
 ```
 
 Options:
@@ -49,7 +49,7 @@ repos:
     name: my-notes         # optional; defaults to the repo name in the URL
 ```
 
-See `repotrack.example.yml`.
+See `gitmirror.example.yml`.
 
 ## Exit codes
 
