@@ -1,0 +1,15 @@
+# Where the local mirrors live. ~ and $VARS are expanded.
+base_dir: ~/src/mirrors
+
+# Used when a repo entry omits `branch`.
+default_branch: main
+
+repos:
+  - url: https://github.com/astral-sh/uv.git
+
+  - url: https://github.com/python/cpython.git
+    branch: 3.13
+
+  - url: git@github.com:you/notes.git
+    branch: main
+    name: my-notes          # optional; defaults to the repo name in the URL
