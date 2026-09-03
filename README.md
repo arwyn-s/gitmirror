@@ -14,6 +14,35 @@ So there are only two states:
 
 ## Install
 
+### System-wide
+
+Installs `gitmirror` on your `PATH` in its own isolated environment:
+
+```sh
+uv tool install git+https://github.com/arwyn-s/gitmirror.git
+# or, from a local checkout
+uv tool install .
+```
+
+If the shim directory is not on your `PATH` yet, `uv tool update-shell` adds it
+(restart the shell afterwards). Then:
+
+```sh
+gitmirror --help
+```
+
+To update or remove it later:
+
+```sh
+uv tool upgrade gitmirror
+uv tool uninstall gitmirror
+```
+
+`pipx install git+https://github.com/arwyn-s/gitmirror.git` works the same way
+if you prefer pipx.
+
+### From a checkout (development)
+
 ```sh
 uv sync
 uv run gitmirror --help
